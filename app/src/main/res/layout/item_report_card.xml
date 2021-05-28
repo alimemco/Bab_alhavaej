@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="@dimen/_4sdp"
+            app:cardCornerRadius="@dimen/_12sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp">
+
+                <View
+                    android:id="@+id/view_lineLeft"
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/view_lineRight"
+                    android:background="@color/gray"/>
+
+                <View
+                    android:id="@+id/view_lineRight"
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/view_lineLeft"
+                    android:background="@color/gray"/>
+
+                <TextView
+                    android:id="@+id/textView_charities"
+                    style="@style/TextMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/view_lineLeft"
+                    tools:text="2,140"/>
+
+                <TextView
+                    android:id="@+id/textView_charities_title"
+                    style="@style/TextMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_charities"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/view_lineLeft"
+                    android:text="@string/charities_count"/>
+
+
+
+                <TextView
+                    android:id="@+id/textView_needsMet"
+                    style="@style/TextMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/view_lineLeft"
+                    app:layout_constraintRight_toLeftOf="@+id/view_lineRight"
+                    tools:text="35,632"/>
+
+                <TextView
+                    android:id="@+id/textView_needsMet_title"
+                    style="@style/TextMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_needsMet"
+                    app:layout_constraintLeft_toRightOf="@+id/view_lineLeft"
+                    app:layout_constraintRight_toLeftOf="@+id/view_lineRight"
+                    android:text="@string/needs_met"/>
+
+
+                <TextView
+                    android:id="@+id/textView_supporters"
+                    style="@style/TextMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/view_lineRight"
+                    app:layout_constraintRight_toRightOf="parent"
+                    tools:text="35,632"/>
+
+                <TextView
+                    android:id="@+id/textView_supporters_title"
+                    style="@style/TextMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_supporters"
+                    app:layout_constraintLeft_toRightOf="@+id/view_lineRight"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="@string/supporters"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">باب الحوائج</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="charities_count">تعداد مراکز خیریه</string>
+    <string name="_0">0</string>
+    <string name="needs_met">نیازهای رفع شده</string>
+    <string name="supporters">حامیان</string>
+</resources>
